@@ -2,4 +2,44 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+.site {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.site-header {
+    background: #CCC;
+    padding: 1rem;
+}
+
+.site-content {
+    background: #CCC;
+    padding: 1rem;
+    margin: 1rem 0;
+    display: flex;
+    .content-area {
+        flex: 2;
+        background: orange;
+    }
+    .widget-area {
+        flex: 1;
+        background: yellow;
+    }
+}
+
+.site-footer {
+    background: black;
+    color: white;
+    padding: 1rem;
+}
+
 /* Front page */
+
+.home {
+    .site {
+        max-width: 90%;
+    }
+    .site-header {
+        background: red;
+    }
+}

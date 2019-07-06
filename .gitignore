@@ -29,12 +29,15 @@ ehthumbs.db
 !updloads/
 !README.md
 
+# Ignore everything in "plugins" except certain plugins. #
 plugins/*
 !plugins/inhabitent-functionality
 
+# Ignore everything in "themes" except the active theme. #
 themes/*
 !themes/inhabitant
-themes/inhabitant/node_modules/
 
+# Ignore packages #
+themes/inhabitant/node_modules/
 
 updloads/wp-migrate-db/
