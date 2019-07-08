@@ -317,10 +317,6 @@ hr {
   height: 1px;
   margin-bottom: 1.5rem; }
 
-ul,
-ol {
-  margin: 0 0 1.5rem 3rem; }
-
 ul {
   list-style: disc; }
 
@@ -420,9 +416,10 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #248A83;
+  text-decoration: none; }
   a:visited {
-    color: purple; }
+    color: #248A83; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -432,51 +429,32 @@ a {
 
 /* Menus */
 .main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1000px; }
+  .main-navigation .logo {
+    width: 100%; }
   .main-navigation ul {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-              box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5rem;
-      left: -999rem;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999rem;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
+    text-transform: uppercase; }
+    .main-navigation ul li {
+      padding-left: 15px; }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
-
 @media screen and (min-width: 768px) {
   .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
+    display: none; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -566,7 +544,9 @@ a {
 
 /* Search widget. */
 .widget_search .search-submit {
-  display: none; }
+  display: none;
+  background: none;
+  border: none; }
 
 /*--------------------------------------------------------------
 # Content
@@ -670,30 +650,43 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 .site {
-  max-width: 800px;
+  background: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto; }
 
 .site-header {
-  background: #CCC;
-  padding: 1rem; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid #e1e1e1; }
 
 .site-content {
-  background: #CCC;
+  width: 950px;
+  -ms-flex-item-align: center;
+      align-self: center;
   padding: 1rem;
-  margin: 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
   .site-content .content-area {
     -webkit-box-flex: 2;
         -ms-flex: 2;
-            flex: 2;
-    background: orange; }
+            flex: 2; }
   .site-content .widget-area {
     -webkit-box-flex: 1;
         -ms-flex: 1;
-            flex: 1;
-    background: yellow; }
+            flex: 1; }
 
 .site-footer {
   background: black;

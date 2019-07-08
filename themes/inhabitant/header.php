@@ -27,6 +27,15 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<div class="logo"> 
+						<div class="logo-img">
+							<?php echo '<style type="text/css">                                                                   
+							.logo-img { background-image:url('.get_stylesheet_directory_uri().'/images/inhabitent-logo-tent.svg) !important; 
+							height: 45px !important; width: 45px !important; background-size: 100% !important; background-repeat: no-repeat;}                            
+							</style>';
+							?>
+						</div>
+					</div>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
