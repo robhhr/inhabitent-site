@@ -53,8 +53,17 @@
         position: absolute;
         top: 10px;
         background-color: $green;
-        a {
-            color: $background-color;
+        max-width: 60%;
+        // min-width: 70%;
+        .int-text {
+            width: 100%;
+            text-align: left;
+            padding: 5px 30px;
+            a {
+                color: $background-color;
+                font-size: 28px;
+                text-transform: uppercase;
+            }
         }
     }
     .entry-meta {
@@ -62,14 +71,33 @@
         bottom: 0px;
         right: 0px;
         background-color: $green;
-        * {
+        color: $background-color;
+        padding: 5px 30px;
+    }
+}
+
+.read-more {
+    padding: 0 0 40px 0;
+    .button {
+        padding: 10px 25px;
+        border: 1px solid $black;
+        text-transform: uppercase;
+        color: $black;
+        font-size: 14px;
+        &:hover {
+            background-color: $green;
             color: $background-color;
+            border: none;
         }
     }
 }
 
-.site-main {
+.entry-content {
     width: 95%;
+}
+
+.site-main {
+    width: 100%;
 }
 
 // Footer

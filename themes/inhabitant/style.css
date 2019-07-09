@@ -244,9 +244,6 @@ h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
 /* Copy */
-p {
-  margin-bottom: 1.5rem; }
-
 dfn, cite, em, i {
   font-style: italic; }
 
@@ -710,19 +707,42 @@ object {
   .entry-header .entry-title {
     position: absolute;
     top: 10px;
-    background-color: #248A83; }
-    .entry-header .entry-title a {
-      color: #FFFFFF; }
+    background-color: #248A83;
+    max-width: 60%; }
+    .entry-header .entry-title .int-text {
+      width: 100%;
+      text-align: left;
+      padding: 5px 30px; }
+      .entry-header .entry-title .int-text a {
+        color: #FFFFFF;
+        font-size: 28px;
+        text-transform: uppercase; }
   .entry-header .entry-meta {
     position: absolute;
     bottom: 0px;
     right: 0px;
-    background-color: #248A83; }
-    .entry-header .entry-meta * {
-      color: #FFFFFF; }
+    background-color: #248A83;
+    color: #FFFFFF;
+    padding: 5px 30px; }
+
+.read-more {
+  padding: 0 0 40px 0; }
+  .read-more .button {
+    padding: 10px 25px;
+    border: 1px solid #000000;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 14px; }
+    .read-more .button:hover {
+      background-color: #248A83;
+      color: #FFFFFF;
+      border: none; }
+
+.entry-content {
+  width: 95%; }
 
 .site-main {
-  width: 95%; }
+  width: 100%; }
 
 .site-footer {
   background: black;
