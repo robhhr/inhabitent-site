@@ -31,7 +31,7 @@
 						<div class="logo-img">
 							<?php echo '<style type="text/css">                                                                   
 							.logo-img { background-image:url('.get_stylesheet_directory_uri().'/images/inhabitent-logo-tent.svg) !important; 
-							height: 45px !important; width: 45px !important; background-size: 100% !important; background-repeat: no-repeat;}                            
+							height: 30px !important; width: 45px !important; background-size: 100% !important; background-repeat: no-repeat;}                            
 							</style>';
 							?>
 						</div>
