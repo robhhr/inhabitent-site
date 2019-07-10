@@ -23,6 +23,19 @@
 					<a href="<?php echo esc_url( 'www.google.com' ); ?>"><?php echo "<i class='fa fa-twitter-square' id='sm-icon'></i>" ?></a>
 					<a href="<?php echo esc_url( 'www.google.com' ); ?>"><?php echo "<i class='fa fa-google-plus-square' id='sm-icon'></i>" ?></a>
 				</div><!-- .site-info -->
+				<div class="business-hours">
+					<p>Business Hours</p>
+					<div class="hours"><?php printf( esc_html( ' Monday-Friday: ' ) ); ?></a></div><?php printf( esc_html( ' 9am to 5pm' ) ); ?><br>
+					<div class="hours"><?php printf( esc_html( ' Saturday: ' ) ); ?></a></div><?php printf( esc_html( ' 10am to 2pm' ) ); ?><br>
+					<div class="hours"><?php printf( esc_html( ' Sunday: ' ) ); ?></a></div><?php printf( esc_html( ' closed' ) ); ?>
+				</div>
+				<div class="footer-logo">
+					<?php echo
+						'<style type="text/css">
+						.footer-logo { background-image:url('.get_stylesheet_directory_uri().'/images/inhabitent-logo-text.svg) !important}
+						</style>';
+					?>
+				</div>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
