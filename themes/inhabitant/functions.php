@@ -104,6 +104,23 @@ function inhabitent_remove_submenus() {
 }
 add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
 
+// posts per page based on content type
+// function inhabitent_custom_posts_per_page($query)
+// {
+//     switch ( $query->query_vars['pagename'] )
+//     {
+//         case 'archive-product.php':  // Post Type named 'content_type_name'
+//             $query->query_vars['posts_per_page'] = 3; //display all is -1
+//             break;
+
+//     }
+//     return $query;
+// }
+// if( !is_admin() )
+// {
+//     add_filter( 'pre_get_posts', 'inhabitent_custom_posts_per_page' );
+// }
+
 /**
  * Custom template tags for this theme.
  */

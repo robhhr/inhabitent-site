@@ -548,10 +548,12 @@ a {
 .product-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 500px; }
+  height: auto; }
   .product-container article {
-    width: 200px;
-    height: 200px; }
+    min-width: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    max-height: 200px; }
 
 /*--------------------------------------------------------------
 # Content
