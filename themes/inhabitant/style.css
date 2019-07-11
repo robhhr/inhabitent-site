@@ -545,6 +545,14 @@ a {
   background: none;
   border: none; }
 
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 500px; }
+  .product-container article {
+    width: 200px;
+    height: 200px; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -750,6 +758,12 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 300px;
   color: #FFFFFF;
@@ -776,9 +790,13 @@ object {
   font-weight: bold; }
 
 .footer-logo {
-  height: 100%;
-  width: 100%;
+  height: 50%;
+  width: 30%;
   background-repeat: no-repeat; }
+  .footer-logo .f-logo {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat; }
 
 /* Front page */
 .home .site {

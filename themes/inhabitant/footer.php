@@ -30,11 +30,13 @@
 					<div class="hours"><?php printf( esc_html( ' Sunday: ' ) ); ?></a></div><?php printf( esc_html( ' closed' ) ); ?>
 				</div>
 				<div class="footer-logo">
+					<div class="f-logo">
 					<?php echo
 						'<style type="text/css">
-						.footer-logo { background-image:url('.get_stylesheet_directory_uri().'/images/inhabitent-logo-text.svg) !important}
+						.f-logo { background-image:url('.get_stylesheet_directory_uri().'/images/inhabitent-logo-text.svg) !important}
 						</style>';
 					?>
+					</div>
 				</div>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
