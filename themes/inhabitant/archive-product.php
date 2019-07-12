@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * The template for displaying archive pages.
  *
  * @package RED_Starter_Theme
@@ -8,15 +8,12 @@
 get_header(); ?>
 
 	<div class="shop-container">
-		<div class="shop-intro">
-			<h1>Shop stuff</h1>
-			<ul class="taxonomies">
-				<li>Do</li>
-				<li>Eat</li>
-				<li>Sleep</li>
-				<li>Wear</li>
-			</ul>
-		</div>
+	<?php if ( have_posts() ) : ?>
+
+		<?php  post_type_archive_title();?>
+
+	<?php endif; ?>
+	
 		<main class="product-container">
 
 		<?php 
@@ -31,8 +28,7 @@ get_header(); ?>
 		<?php if ( $the_query->have_posts() ) : ?>
 		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 			
-			<?php get_template_part( 'template-parts/content-product' ); ?>
-			
+			<?php get_template_part( 'template-parts/content-product' ); ?>			
 
 		<?php endwhile; ?>
 		<?php wp_reset_postdata(); ?>

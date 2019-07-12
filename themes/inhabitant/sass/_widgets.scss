@@ -11,6 +11,31 @@
 	}
 }
 
+.widget-area {
+	// padding: 10px 65px;
+	text-align: left;
+	ul {
+		padding-right: 50px;
+		list-style: none;
+		width: 100%;
+	}
+}
+
+.textwidget {
+	line-height: 35px;
+	width: 225px;
+	i {
+		padding-right: 10px;
+	}
+	a, span {
+		width: 100%
+	}
+}
+
+.widget_text, .widget_archive {
+	padding-left: 50px;
+}
+
 /* Search widget. */
 .widget_search .search-submit {
 	display: none;

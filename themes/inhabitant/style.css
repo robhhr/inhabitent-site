@@ -349,9 +349,6 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
   background: #e6e6e6;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
@@ -386,9 +383,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
+  color: #666; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -539,6 +534,24 @@ a {
   .widget select {
     max-width: 100%; }
 
+.widget-area {
+  text-align: left; }
+  .widget-area ul {
+    padding-right: 50px;
+    list-style: none;
+    width: 100%; }
+
+.textwidget {
+  line-height: 35px;
+  width: 225px; }
+  .textwidget i {
+    padding-right: 10px; }
+  .textwidget a, .textwidget span {
+    width: 100%; }
+
+.widget_text, .widget_archive {
+  padding-left: 50px; }
+
 /* Search widget. */
 .widget_search .search-submit {
   display: none;
@@ -592,13 +605,24 @@ header {
 h2 {
   text-transform: uppercase; }
 
+input, textarea {
+  background-color: #F5F5F5;
+  border: 1px solid #e1e1e1; }
+
+label {
+  text-transform: uppercase; }
+
 input[type="submit"] {
   color: white;
   background-color: #248A83;
   -webkit-box-shadow: none;
           box-shadow: none;
   text-shadow: none;
-  border-radius: none;
+  border-radius: 0;
+  border: none;
+  width: 80px;
+  text-transform: uppercase;
+  font-weight: bold;
   padding: 10px; }
 
 /*--------------------------------------------------------------
