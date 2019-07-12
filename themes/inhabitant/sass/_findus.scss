@@ -1,0 +1,22 @@
+header {
+    text-transform: uppercase;
+}
+
+.entry-content {
+    iframe {
+        width: 100%;
+    }
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: $green;
+    box-shadow: none;
+    text-shadow: none;
+    border-radius: none;
+    padding: 10px;
+}

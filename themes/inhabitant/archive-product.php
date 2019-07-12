@@ -24,7 +24,7 @@ get_header(); ?>
 		$the_query = new WP_Query( array(
 			'post_type' => 'product',
 			'order' => 'ASC',
-			'posts_per_page' => 16,
+			'posts_per_page' => 20,
 		)); 
 		?>
 
