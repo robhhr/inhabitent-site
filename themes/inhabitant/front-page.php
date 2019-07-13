@@ -8,6 +8,29 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+
+		<!-- Posts Loop -->
+		<?php
+		$shop_loop = new WP_Query( array(
+			'post_type' => 'post',
+			'order' => 'DESC',
+			'posts_per_page' => 3,
+		)); 
+		?>
+
+		<?php if ( $shop_loop->have_posts() ) : ?>
+		<?php while ( $shop_loop->have_posts() ) : $shop_loop->the_post(); ?>
+			
+			<?php get_template_part( 'template-parts/content-product' ); ?>			
+
+		<?php endwhile; ?>
+		<?php wp_reset_postdata(); ?>
+
+		<?php else : ?>
+		<p><?php __('No post found'); ?></p>
+		<?php endif; ?>
+		<!-- End loop -->
+
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>

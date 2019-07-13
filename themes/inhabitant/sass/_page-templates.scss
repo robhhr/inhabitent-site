@@ -79,17 +79,20 @@
 }
 
 .read-more {
+    width: 180px;
     padding: 0 0 40px 0;
+    text-align: center;
     .button {
-        padding: 10px 25px;
+        width: 180px;
+        padding: 10px 0;
         border: 1px solid $black;
         text-transform: uppercase;
         color: $black;
         font-size: 14px;
         &:hover {
-            background-color: $green;
             color: $background-color;
-            border: none;
+            background-color: $green;
+            border: 1px solid $green;
         }
     }
 }
@@ -158,6 +161,6 @@
         max-width: 90%;
     }
     .site-header {
-        background: red;
+        background: $background-color;
     }
 }

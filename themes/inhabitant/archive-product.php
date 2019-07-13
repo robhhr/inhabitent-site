@@ -18,19 +18,24 @@ get_header(); ?>
 
 		<?php 
 		// Product loop
-		$the_query = new WP_Query( array(
+		$shop_loop = new WP_Query( array(
 			'post_type' => 'product',
 			'order' => 'ASC',
 			'posts_per_page' => 20,
 		)); 
 		?>
 
-		<?php if ( $the_query->have_posts() ) : ?>
-		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+		<?php if ( $shop_loop->have_posts() ) : ?>
+		<?php while ( $shop_loop->have_posts() ) : $shop_loop->the_post(); ?>
 			
-			<?php get_template_part( 'template-parts/content-product' ); ?>			
+			<?php get_template_part( 'template-parts/content-product' ); ?>
 
 		<?php endwhile; ?>
+		<?php the_posts_pagination(array(
+			'mid_size' => 2,
+			'prev_text' => __( 'Back', 'textdomain' ),
+    		'next_text' => __( 'More, more, more............', 'textdomain' )
+		)) ?>
 		<?php wp_reset_postdata(); ?>
 
 		<?php else : ?>
