@@ -592,6 +592,12 @@ a {
     -o-object-fit: cover;
        object-fit: cover; }
   .product-area .product-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 45px;
     border-top: 4px solid #e1e1e1;
     border-right: 1px solid #e1e1e1;
@@ -600,7 +606,7 @@ a {
     .product-area .product-text span {
       color: #000000;
       vertical-align: middle;
-      padding: 10px 15px 0 15px; }
+      padding: 8px 15px 0 15px; }
 
 header {
   text-transform: uppercase; }

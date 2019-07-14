@@ -31,6 +31,8 @@
     object-fit: cover;
     }
     .product-text {
+        display: flex;
+        justify-content: space-between;
         height: 45px;
         border-top: (4px solid #e1e1e1);
         border-right: (1px solid #e1e1e1);
@@ -39,7 +41,10 @@
         span {
             color: $black;
             vertical-align: middle;
-            padding: 10px 15px 0 15px;
+            padding: 8px 15px 0 15px;
         }
+        // .price {
+        //     vertical-align: middle;
+        // }
     }
 }
