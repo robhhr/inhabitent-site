@@ -12,6 +12,26 @@ get_header(); ?>
 
 		<?php  post_type_archive_title();?>
 
+		<?php 
+			$args = array(
+				'public'   => true,
+  				'_builtin' => false,
+			);
+			$output = 'names';
+			$link = 'and';
+			$taxs = get_taxonomies($args, $output, $link); 
+			if  ($taxs) {
+  				foreach ($taxs  as $taxonomy ) {
+    			$terms = get_terms($taxonomy);
+        		foreach ( $terms as $term) {
+		?>
+					<ul class="tax-nav">
+						<li>
+							<a href="#"><?php echo $term->name; ?></a>
+						</li>
+					</ul>
+				<?php }}} ?>
+
 	<?php endif; ?>
 	
 		<main class="product-container">

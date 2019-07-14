@@ -1,3 +1,14 @@
+// Taxonomy bar
+
+.tax-nav {
+    list-style: none;
+    text-transform: uppercase;
+    display: inline-block;
+    
+}
+
+// Products gird
+
 .product-container {
     display: grid;
     grid-gap: 30px;

@@ -14,5 +14,8 @@
 	
 	<?php endif; ?>
 
-	<?php the_title( sprintf( '<div class="product-text"><span href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</span></div>'); ?>
+	<div class="product-text">
+		<?php the_title( sprintf( '<span href="%s" rel="bookmark">', esc_url( get_permalink() ).get_post_custom()['price'][0] ), '</span>');
+		?>
+	</div>
 </a>

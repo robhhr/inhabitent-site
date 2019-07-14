@@ -558,6 +558,11 @@ a {
   background: none;
   border: none; }
 
+.tax-nav {
+  list-style: none;
+  text-transform: uppercase;
+  display: inline-block; }
+
 .product-container {
   display: grid;
   grid-gap: 30px;
