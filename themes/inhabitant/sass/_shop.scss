@@ -1,10 +1,28 @@
 // Taxonomy nav
 
+.shop-container {
+    padding-bottom: 80px;
+}
+
+.shop-title {
+    padding-top: 20px;
+    h1, .tax-nav {
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
 .tax-nav {
+    margin: 0 auto;
+    width: 50%;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
     list-style: none;
     text-transform: uppercase;
-    display: inline-block;
-    font-weight: bold;
 }
 
 // Products grid
@@ -25,26 +43,38 @@
     justify-content: stretch;
     width: 100%;
     height: 300px;
+
     img {
     width: 100%;
     height: 250px;
     object-fit: cover;
     }
     .product-text {
+        position: relative;
         display: flex;
         justify-content: space-between;
         height: 45px;
-        border-top: (4px solid #e1e1e1);
-        border-right: (1px solid #e1e1e1);
-        border-bottom: (1px solid #e1e1e1);
-        border-left: (1px solid #e1e1e1);
-        span {
+        border-top: (4px solid $border);
+        border-right: (1px solid $border);
+        border-bottom: (1px solid $border);
+        border-left: (1px solid $border);
+        z-index: 10;
+        padding: 0 15px;
+        .price {
+            &:before {
+                content: "..........................................";
+                position: absolute;
+                right: 20%;
+                z-index: -10;
+            }
+        }
+        span, .price {
+            text-transform: capitalize;
+            background-color: $background-color;
             color: $black;
             vertical-align: middle;
-            padding: 8px 15px 0 15px;
+            padding: 8px 0 0;
         }
-        // .price {
-        //     vertical-align: middle;
-        // }
+
     }
 }

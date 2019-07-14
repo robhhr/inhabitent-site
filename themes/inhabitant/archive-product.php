@@ -8,10 +8,13 @@
 get_header(); ?>
 
 	<div class="shop-container">
+
 	<?php if ( have_posts() ) : ?>
-
-		<?php  post_type_archive_title();?>
-
+		<div class="shop-title">
+			<h1>Shop Stuff</>
+		</div>
+		
+	<div class="tax-nav">
 		<?php 
 			$args = array(
 				'public'   => true,
@@ -23,17 +26,19 @@ get_header(); ?>
 			if  ($tax) {
   				foreach ($tax as $taxonomy ) {
     			$terms = get_terms($taxonomy);
-        		foreach ( $terms as $term) {
-		?>			
-					<ul class="tax-nav">
+				foreach ( $terms as $term) { ?>
+				
+					<ul>
 						<li>
 						<a href="<?php echo esc_url(get_term_link($term)); ?>"><?php echo $term->name; ?></a>
 						</li>
 					</ul>
 				<?php }}} ?>
+		</div>
 
 	<?php endif; ?>
-	
+
+
 		<main class="product-container">
 
 		<?php 
@@ -51,11 +56,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content-product' ); ?>
 
 		<?php endwhile; ?>
-		<?php the_posts_pagination(array(
-			'mid_size' => 2,
-			'prev_text' => __( 'Back', 'textdomain' ),
-    		'next_text' => __( 'More, more, more............', 'textdomain' )
-		)) ?>
+
 		<?php wp_reset_postdata(); ?>
 
 		<?php else : ?>
