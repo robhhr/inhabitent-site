@@ -19,15 +19,15 @@ get_header(); ?>
 			);
 			$output = 'names';
 			$link = 'and';
-			$taxs = get_taxonomies($args, $output, $link); 
-			if  ($taxs) {
-  				foreach ($taxs  as $taxonomy ) {
+			$tax = get_taxonomies($args, $output, $link); 
+			if  ($tax) {
+  				foreach ($tax as $taxonomy ) {
     			$terms = get_terms($taxonomy);
         		foreach ( $terms as $term) {
-		?>
+		?>			
 					<ul class="tax-nav">
 						<li>
-							<a href="#"><?php echo $term->name; ?></a>
+						<a href="<?php echo esc_url(get_term_link($term)); ?>"><?php echo $term->name; ?></a>
 						</li>
 					</ul>
 				<?php }}} ?>

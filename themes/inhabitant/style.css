@@ -561,7 +561,8 @@ a {
 .tax-nav {
   list-style: none;
   text-transform: uppercase;
-  display: inline-block; }
+  display: inline-block;
+  font-weight: bold; }
 
 .product-container {
   display: grid;
