@@ -438,10 +438,13 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 350px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     list-style: none;
-    text-transform: uppercase; }
-    .main-navigation ul li {
-      padding-left: 15px; }
+    text-transform: uppercase;
+    justify-content: space-between; }
 
 /* Small menu. */
 @media screen and (min-width: 768px) {
