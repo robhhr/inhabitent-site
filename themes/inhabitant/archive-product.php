@@ -34,7 +34,7 @@ get_header(); ?>
 						</li>
 					</ul>
 				<?php }}} ?>
-		</div>
+	</div>
 
 	<?php endif; ?>
 

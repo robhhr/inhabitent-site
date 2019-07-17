@@ -9,28 +9,6 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 
-		<!-- Posts Loop -->
-		<?php
-		$shop_loop = new WP_Query( array(
-			'post_type' => 'post',
-			'order' => 'DESC',
-			'posts_per_page' => 3,
-		)); 
-		?>
-
-		<?php if ( $shop_loop->have_posts() ) : ?>
-		<?php while ( $shop_loop->have_posts() ) : $shop_loop->the_post(); ?>
-			
-			<?php get_template_part( 'template-parts/content-product' ); ?>			
-
-		<?php endwhile; ?>
-		<?php wp_reset_postdata(); ?>
-
-		<?php else : ?>
-		<p><?php __('No post found'); ?></p>
-		<?php endif; ?>
-		<!-- End loop -->
-
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -44,7 +22,7 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content' ); ?>
+				<?php get_template_part( 'template-parts/content-product' ); ?>
 
 			<?php endwhile; ?>
 
@@ -57,7 +35,29 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
+
+		<!-- Posts Loop -->
+		<?php
+		$shop_loop = new WP_Query( array(
+			'post_type' => 'post',
+			'order' => 'DESC',
+			'posts_per_page' => 3,
+		)); 
+		?>
+
+		<?php if ( $shop_loop->have_posts() ) : ?>
+		<?php while ( $shop_loop->have_posts() ) : $shop_loop->the_post(); ?>
+			
+			<?php get_template_part( 'template-parts/content' ); ?>			
+
+		<?php endwhile; ?>
+		<?php wp_reset_postdata(); ?>
+
+		<?php else : ?>
+		<p><?php __('No post found'); ?></p>
+		<?php endif; ?>
+		<!-- End loop -->
+
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
