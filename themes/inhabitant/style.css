@@ -646,7 +646,21 @@ ul {
       align-content: center; }
   .entry-header.hero-image-header * {
     color: white;
-    background-color: none; }
+    background-color: transparent !important;
+    top: initial !important;
+    font-size: 42px; }
+
+.site-main-alt {
+  text-align: center;
+  padding-bottom: 80px; }
+  .site-main-alt h2 {
+    padding-top: 25px; }
+  .site-main-alt p {
+    width: 750px;
+    text-align: left;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    line-height: 30px; }
 
 .site-header-alt {
   display: -webkit-box;

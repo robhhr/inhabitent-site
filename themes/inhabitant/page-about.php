@@ -7,14 +7,14 @@
 
 get_header('about'); ?>
 
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main-alt" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php the_content(); ?>
+			<?php the_content(get_the_title()); ?>
 
-			<?php endwhile; // End of the loop. ?>
+			<?php endwhile; ?>
 
-		</main><!-- #main -->
+		</main>
 
 <?php get_footer(); ?>

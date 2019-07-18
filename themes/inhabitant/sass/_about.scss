@@ -4,7 +4,24 @@
     align-content: center;
     * {
         color: white;
-        background-color: none;
+        background-color: transparent !important;
+        top: initial !important;
+        font-size: 42px;
+    }
+}
+
+.site-main-alt {
+    text-align: center;
+    padding-bottom: 80px;
+    h2 {
+        padding-top: 25px;
+    }
+    p {
+        width: 750px;
+        text-align: left;
+        margin: 0 auto;
+        padding-bottom: 15px;
+        line-height: 30px;
     }
 }
 
