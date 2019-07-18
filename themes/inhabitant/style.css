@@ -419,6 +419,18 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+.site-main-fp {
+  text-align: center;
+  padding-bottom: 80px; }
+  .site-main-fp h2 {
+    padding-top: 25px; }
+  .site-main-fp p {
+    width: 750px;
+    text-align: left;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    line-height: 30px; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -664,7 +676,8 @@ ul {
   width: 100%;
   height: 100vh;
   -ms-flex-line-pack: center;
-      align-content: center; }
+      align-content: center;
+  background-position: top !important; }
   .entry-header.hero-image-header * {
     color: white;
     background-color: transparent !important;

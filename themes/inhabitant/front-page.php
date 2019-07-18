@@ -5,36 +5,16 @@
  * @package RED_Starter_Theme
  */
 
-get_header(); ?>
+get_header('home'); ?>
 
-	<div id="primary" class="content-area">
-
-		<main id="main" class="site-main" role="main">
-
-		<?php if ( have_posts() ) : ?>
-
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
-
-			<?php /* Start the Loop */ ?>
+		<main id="main" class="site-main-alt" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content-product' ); ?>
-
+				<div class="image-hero">
+					<?php echo '<style type="text/css"> .image-hero { background-image:url('.get_stylesheet_directory_uri().'/images/inhabitent-logo-full.svg) !important; height: 250px !important; width: 250px !important; background-size: 100% !important; background-repeat: no-repeat; position: absolute; z-index: 100; top: 40%; left: 40%;}</style>';?>
+				</div>
+				<?php the_content(); ?>
 			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
+		</main>
 
 		<!-- Posts Loop -->
 		<?php
@@ -58,6 +38,5 @@ get_header(); ?>
 		<?php endif; ?>
 		<!-- End loop -->
 
-	</div><!-- #primary -->
 
 <?php get_footer(); ?>
