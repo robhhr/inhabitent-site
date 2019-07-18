@@ -27,6 +27,10 @@ a {
 
 /* Menus */
 
+.menu-the-menu-container {
+	width: 450px;
+}
+
 .main-navigation {
 	height: 50px;
 	display: flex;
@@ -38,11 +42,12 @@ a {
 	}
 	ul {
 		display: flex;
-		width: 350px;
+		// width: 350px;
 		justify-content: space-between;
 		list-style: none;
 		text-transform: uppercase;
 		justify-content: space-between;
+		align-items: center;
 		}
 	}
 

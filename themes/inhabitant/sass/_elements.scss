@@ -71,3 +71,24 @@ table {
   margin: 0 0 $base__space-unit;
   width: 100%;
 }
+
+.search-form {
+  fieldset {
+    border: none;
+    padding: 50% 0;
+    margin: 0;
+    label {
+      display: none;
+    }
+    .search-submit {
+      border: none;
+      background: transparent;
+      box-shadow: none;
+      padding: none;
+      .icon-search {
+        color: $green;
+        font-size: 16px;
+      }
+    }
+  }
+}
