@@ -420,8 +420,7 @@ textarea {
   width: 100%; }
 
 .site-main-fp {
-  text-align: center;
-  padding-bottom: 80px; }
+  text-align: center; }
   .site-main-fp h2 {
     padding-top: 25px; }
   .site-main-fp p {
@@ -430,6 +429,58 @@ textarea {
     margin: 0 auto;
     padding-bottom: 15px;
     line-height: 30px; }
+
+.blog-front {
+  width: 1200px;
+  height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center; }
+  .blog-front .journal-front {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px; }
+
+.entry-meta-fp {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: #248A83;
+  color: #FFFFFF;
+  padding: 5px 30px; }
+
+.product-text-fp {
+  position: relative;
+  text-align: left;
+  border-top: 4px solid #E1E1E1;
+  border-right: 1px solid #E1E1E1;
+  border-bottom: 1px solid #E1E1E1;
+  border-left: 1px solid #E1E1E1;
+  z-index: 10;
+  padding: 0 15px; }
+
+.read-entry {
+  width: 180px;
+  padding: 0 0 40px 0;
+  text-align: center; }
+  .read-entry .button {
+    width: 180px;
+    padding: 10px 0;
+    border: 1px solid #000000;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 14px; }
+    .read-entry .button:hover {
+      color: #FFFFFF;
+      background-color: #248A83;
+      border: 1px solid #248A83; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -671,6 +722,22 @@ ul {
       color: #000000;
       vertical-align: middle;
       padding: 8px 0 0; }
+
+.read-entry {
+  width: 180px;
+  padding: 0 0 40px 0;
+  text-align: center; }
+  .read-entry .button {
+    width: 180px;
+    padding: 10px 0;
+    border: 1px solid #000000;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 14px; }
+    .read-entry .button:hover {
+      color: #FFFFFF;
+      background-color: #248A83;
+      border: 1px solid #248A83; }
 
 .entry-header.hero-image-header {
   width: 100%;

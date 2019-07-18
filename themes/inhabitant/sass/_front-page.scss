@@ -1,6 +1,5 @@
 .site-main-fp {
     text-align: center;
-    padding-bottom: 80px;
     h2 {
         padding-top: 25px;
     }
@@ -10,5 +9,59 @@
         margin: 0 auto;
         padding-bottom: 15px;
         line-height: 30px;
+    }
+}
+
+.blog-front {
+    width: 1200px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    .journal-front {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+}
+//////////////////////////
+.entry-meta-fp {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: $green;
+    color: $background-color;
+    padding: 5px 30px;
+}
+
+.product-text-fp {
+    position: relative;
+    text-align: left;
+    border-top: (4px solid $border);
+    border-right: (1px solid $border);
+    border-bottom: (1px solid $border);
+    border-left: (1px solid $border);
+    z-index: 10;
+    padding: 0 15px;
+}
+
+//////////////////////////
+.read-entry {
+    width: 180px;
+    padding: 0 0 40px 0;
+    text-align: center;
+    .button {
+        width: 180px;
+        padding: 10px 0;
+        border: 1px solid $black;
+        text-transform: uppercase;
+        color: $black;
+        font-size: 14px;
+        &:hover {
+            color: $background-color;
+            background-color: $green;
+            border: 1px solid $green;
+        }
     }
 }
