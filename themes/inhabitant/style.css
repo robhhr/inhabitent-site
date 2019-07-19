@@ -451,12 +451,7 @@ textarea {
     grid-gap: 30px; }
 
 .entry-meta-fp {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  background-color: #248A83;
-  color: #FFFFFF;
-  padding: 5px 30px; }
+  padding: 10px 0 0 5px; }
 
 .product-text-fp {
   position: relative;
@@ -469,11 +464,10 @@ textarea {
   padding: 0 15px; }
 
 .read-entry {
-  width: 180px;
+  width: 120px !important;
   padding: 0 0 40px 0;
   text-align: center; }
   .read-entry .button {
-    width: 180px;
     padding: 10px 0;
     border: 1px solid #000000;
     text-transform: uppercase;
@@ -676,7 +670,8 @@ a {
     font-weight: normal;
     color: #FFFFFF;
     top: 10%;
-    left: 20px; }
+    left: 20px;
+    line-height: normal; }
     .entry-title-fp a:hover {
       color: #F0E4D1; }
 
@@ -687,7 +682,7 @@ a {
   position: relative;
   top: -45%; }
   .read-more-ad .button {
-    width: 180px;
+    width: 125px;
     padding: 10px 0;
     border: 1px solid #FFFFFF;
     text-transform: uppercase;

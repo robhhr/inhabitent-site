@@ -25,14 +25,8 @@
         grid-gap: 30px;
     }
 }
-//////////////////////////
 .entry-meta-fp {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    background-color: $green;
-    color: $background-color;
-    padding: 5px 30px;
+    padding: 10px 0 0 5px;
 }
 
 .product-text-fp {
@@ -46,13 +40,11 @@
     padding: 0 15px;
 }
 
-//////////////////////////
 .read-entry {
-    width: 180px;
+    width: 120px !important;
     padding: 0 0 40px 0;
     text-align: center;
     .button {
-        width: 180px;
         padding: 10px 0;
         border: 1px solid $black;
         text-transform: uppercase;
