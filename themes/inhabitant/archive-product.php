@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<?php if ( have_posts() ) : ?>
 		<div class="shop-title">
-			<h1>Shop Stuff</>
+			<h1>Shop Stuff</h1>
 		</div>
 		
 	<div class="tax-nav">

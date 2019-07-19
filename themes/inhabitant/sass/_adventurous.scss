@@ -1,0 +1,29 @@
+.product-container-ad {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 1200px;
+    padding-top: 50px;
+    border-top: 1px dashed $d-border;
+}
+
+.entry-title-fp {
+    position: relative;
+    height: 500px;
+    img {
+        filter: brightness(65%);
+        width: 600px;
+        height: 550px;
+        object-fit: cover;
+    }
+    * {
+        position: absolute;
+    }
+    a {
+        font-weight: normal;
+        color: $background-color;
+        top: 10%;
+        left: 20px;
+    }
+}
