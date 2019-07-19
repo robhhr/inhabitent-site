@@ -445,6 +445,8 @@ textarea {
   -ms-flex-item-align: center;
       align-self: center;
   text-align: center; }
+  .blog-front h1 {
+    text-transform: uppercase; }
   .blog-front .journal-front {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

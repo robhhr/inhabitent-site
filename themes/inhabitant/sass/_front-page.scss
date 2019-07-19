@@ -19,6 +19,9 @@
     flex-direction: column;
     align-self: center;
     text-align: center;
+    h1 {
+        text-transform: uppercase;
+    }
     .journal-front {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
