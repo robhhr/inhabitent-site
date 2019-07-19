@@ -12,6 +12,13 @@
     }
 }
 
+.tax-nav-fp {
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+    padding-bottom: 30px;
+}
+
 .blog-front {
     width: 1200px;
     height: 650px;
@@ -28,6 +35,7 @@
         grid-gap: 30px;
     }
 }
+
 .entry-meta-fp {
     padding: 10px 0 0 5px;
 }

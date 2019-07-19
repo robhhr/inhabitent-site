@@ -432,6 +432,14 @@ textarea {
     padding-bottom: 15px;
     line-height: 30px; }
 
+.tax-nav-fp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+  padding-bottom: 30px; }
+
 .blog-front {
   width: 1200px;
   height: 650px;

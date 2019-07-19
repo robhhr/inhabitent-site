@@ -17,9 +17,32 @@ get_header('home'); ?>
 		</main>
 
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div class="tax-nav-fp">
+	<div class="shop-title">
+		<h1>Shop Stuff</h1>
+	</div>
 
-
-
+	<?php 
+		$args = array(
+			'public'   => true,
+  			'_builtin' => false,
+		);
+		$output = 'names';
+		$link = 'and';
+		$tax = get_taxonomies($args, $output, $link); 
+		if  ($tax) {
+  			foreach ($tax as $taxonomy ) {
+    		$terms = get_terms($taxonomy);
+			foreach ( $terms as $term) { ?>
+				<ul>
+					<li>
+						<img src="<?php echo get_template_directory_uri()."/images/product-type-icons/".$term->slug.".svg"; ?>" />
+						<?php echo $term->description ?>
+						<a href="<?php echo esc_url(get_term_link($term)); ?>"><?php echo $term->name." Stuff"; ?></a>
+					</li>
+				</ul>
+			<?php }}} ?>
+</div>
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 <!-- Posts Loop -->
