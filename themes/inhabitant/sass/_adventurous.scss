@@ -21,9 +21,36 @@
         position: absolute;
     }
     a {
+        font-family: Merriweather;
+        text-transform: capitalize;
+        width: 90%;
+        font-size: 50px;
         font-weight: normal;
         color: $background-color;
         top: 10%;
         left: 20px;
+        &:hover {
+            color: $yellow;
+        }
+    }
+}
+
+.read-more-ad {
+    width: 180px;
+    padding: 0 0 40px 25px;
+    text-align: center;
+    position: relative;
+    top: -45%;
+    .button {
+        width: 180px;
+        padding: 10px 0;
+        border: 1px solid $background-color;
+        text-transform: uppercase;
+        color: $background-color;
+        font-size: 14px;
+        &:hover {
+            background-color: $green;
+            border: 1px solid $green;
+        }
     }
 }
