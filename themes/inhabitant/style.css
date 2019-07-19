@@ -43,6 +43,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+@import url(../fonts/Merriweather/style.css);
+@import url(../fonts/Novecento/style.css);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;

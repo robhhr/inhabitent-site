@@ -16,6 +16,12 @@ get_header('home'); ?>
 			<?php endwhile; ?>
 		</main>
 
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
 <!-- Posts Loop -->
 <div class="blog-front">
 	<h1>Inhabitent Journal</h1>
@@ -31,7 +37,7 @@ get_header('home'); ?>
 		<?php if ( $shop_loop->have_posts() ) : ?>
 		<?php while ( $shop_loop->have_posts() ) : $shop_loop->the_post(); ?>
 			
-			<?php get_template_part( 'template-parts/content-posts-fp' ); ?>			
+			<?php get_template_part( 'template-parts/content-posts-fp' ); ?>
 
 		<?php endwhile; ?>
 		<?php wp_reset_postdata(); ?>
