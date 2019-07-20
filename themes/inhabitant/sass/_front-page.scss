@@ -15,8 +15,52 @@
 .tax-nav-fp {
     display: flex;
     margin: 0 auto;
-    width: 1200px;
     padding-bottom: 30px;
+    width: 1200px;
+    justify-content: space-around;
+    .tax-fp {
+        text-transform: initial;
+        // padding-right: 10px;
+        .tax-li {
+            display: grid;
+            grid-template-columns: 1;
+            grid-template-rows: repeat(3, 1fr);
+            height: 100%;
+            text-align: center;
+            width: 280px;
+            border-top: (4px solid $border);
+            border-right: (1px solid $border);
+            border-bottom: (1px solid $border);
+            border-left: (1px solid $border);
+            &:hover {
+                border-top: (4px solid $orange);
+                border-right: (1px solid $orange);
+                border-bottom: (1px solid $orange);
+                border-left: (1px solid $orange);
+            }
+            img {
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .tax-text {
+                width: 85%;
+                margin: 0 auto;
+            }
+            a {
+                color: $background-color;
+                background-color: $green;
+                margin: 0 auto;
+                text-transform: uppercase;
+                padding: 15px;
+                height: 50px;
+                &:hover {
+                    background-color: darken($green, 10%)
+                }
+            }
+        }
+    }
 }
 
 .blog-front {

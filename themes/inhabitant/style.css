@@ -437,8 +437,45 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
+  padding-bottom: 30px;
   width: 1200px;
-  padding-bottom: 30px; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .tax-nav-fp .tax-fp {
+    text-transform: initial; }
+    .tax-nav-fp .tax-fp .tax-li {
+      display: grid;
+      grid-template-columns: 1;
+      grid-template-rows: repeat(3, 1fr);
+      height: 100%;
+      text-align: center;
+      width: 280px;
+      border-top: 4px solid #E1E1E1;
+      border-right: 1px solid #E1E1E1;
+      border-bottom: 1px solid #E1E1E1;
+      border-left: 1px solid #E1E1E1; }
+      .tax-nav-fp .tax-fp .tax-li:hover {
+        border-top: 4px solid #D99054;
+        border-right: 1px solid #D99054;
+        border-bottom: 1px solid #D99054;
+        border-left: 1px solid #D99054; }
+      .tax-nav-fp .tax-fp .tax-li img {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        padding: 20px; }
+      .tax-nav-fp .tax-fp .tax-li .tax-text {
+        width: 85%;
+        margin: 0 auto; }
+      .tax-nav-fp .tax-fp .tax-li a {
+        color: #FFFFFF;
+        background-color: #248A83;
+        margin: 0 auto;
+        text-transform: uppercase;
+        padding: 15px;
+        height: 50px; }
+        .tax-nav-fp .tax-fp .tax-li a:hover {
+          background-color: #19625d; }
 
 .blog-front {
   width: 1200px;

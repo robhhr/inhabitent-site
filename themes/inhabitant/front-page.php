@@ -17,12 +17,11 @@ get_header('home'); ?>
 		</main>
 
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
-<div class="tax-nav-fp">
-	<div class="shop-title">
+<div class="shop-title">
 		<h1>Shop Stuff</h1>
 	</div>
-
-	<?php 
+<div class="tax-nav-fp">
+		<?php 
 		$args = array(
 			'public'   => true,
   			'_builtin' => false,
@@ -34,10 +33,10 @@ get_header('home'); ?>
   			foreach ($tax as $taxonomy ) {
     		$terms = get_terms($taxonomy);
 			foreach ( $terms as $term) { ?>
-				<ul>
-					<li>
+				<ul class="tax-fp">
+					<li class="tax-li">
 						<img src="<?php echo get_template_directory_uri()."/images/product-type-icons/".$term->slug.".svg"; ?>" />
-						<?php echo $term->description ?>
+						<div class="tax-text"><?php echo $term->description ?></div>
 						<a href="<?php echo esc_url(get_term_link($term)); ?>"><?php echo $term->name." Stuff"; ?></a>
 					</li>
 				</ul>
