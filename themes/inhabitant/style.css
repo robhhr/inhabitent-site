@@ -525,6 +525,21 @@ textarea {
       background-color: #248A83;
       border: 1px solid #248A83; }
 
+.adventures-title {
+  text-transform: uppercase;
+  text-align: center; }
+
+.adventures-fp {
+  width: 1200px;
+  margin: 0 auto;
+  grid-gap: 15px; }
+  .adventures-fp img {
+    -o-object-fit: contain;
+       object-fit: contain; }
+
+article {
+  width: 100%; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/

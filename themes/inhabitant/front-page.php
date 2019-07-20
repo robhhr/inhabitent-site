@@ -16,10 +16,10 @@ get_header('home'); ?>
 			<?php endwhile; ?>
 		</main>
 
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- Taxonomy Section -->
 <div class="shop-title">
-		<h1>Shop Stuff</h1>
-	</div>
+	<h1>Shop Stuff</h1>
+</div>
 <div class="tax-nav-fp">
 		<?php 
 		$args = array(
@@ -42,7 +42,6 @@ get_header('home'); ?>
 				</ul>
 			<?php }}} ?>
 </div>
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 <!-- Posts Loop -->
 <div class="blog-front">
@@ -71,5 +70,32 @@ get_header('home'); ?>
 </div>
 <!-- End loop -->
 
+<!-- Adventures Loop -->
+<div class="adventures-title">
+	<h1>Latest Adventures</h1>
+</div>
+<div class="adventures-fp">
+    <?php
+    $adventure_posts = get_posts(array(
+        'post_type' => 'adventures',
+        'posts_per_page' => 4,
+        'order' => 'DESC',
+        ));
+		?>
+		<?php foreach ($adventure_posts as $post) : setup_postdata( $post ); ?>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<?php if ( has_post_thumbnail() ) : ?>
+						<?php the_post_thumbnail( 'large' ); ?>
+					<?php endif; ?>
+
+					<?php the_title( sprintf( '<h2 class="entry-title"><div class="int-text"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></div></h2>' ); ?>
+
+					<?php if ( 'post' === get_post_type() ) : ?>
+					<?php endif; ?>
+			</article>
+        <?php endforeach;?>
+		<?php wp_reset_postdata(); ?>
+</div>
+<?php echo sprintf( '<div class="read-more"><a href="%s" rel="bookmark"><div class="button">', esc_url( get_permalink() )).'Read More <b>&rarr;</b></div></a></div>'; ?>
 
 <?php get_footer(); ?>
