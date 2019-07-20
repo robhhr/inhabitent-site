@@ -31,15 +31,13 @@
         align-items: center;
         flex: 2;
         padding-top: 35px;
-
-        // background: orange;
     }
     .widget-area {
         flex: 1;
         padding-top: 35px;
         align-self: flex-start;
         border-left: 1px solid #e1e1e1;
-        // background: yellow;
+        height: 100%;
     }
 }
 

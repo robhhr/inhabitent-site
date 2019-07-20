@@ -530,12 +530,12 @@ textarea {
   text-align: center; }
 
 .adventures-fp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 1200px;
   margin: 0 auto;
   grid-gap: 15px; }
-  .adventures-fp img {
-    -o-object-fit: contain;
-       object-fit: contain; }
 
 article {
   width: 100%; }
@@ -1154,7 +1154,8 @@ object {
     padding-top: 35px;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    border-left: 1px solid #e1e1e1; }
+    border-left: 1px solid #e1e1e1;
+    height: 100%; }
 
 .entry-header {
   height: 500px;
