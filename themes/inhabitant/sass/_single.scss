@@ -1,5 +1,13 @@
 .social-buttons-blog {
+    align-items: flex-end;
+    width: 110px;
+    padding: 12px 0 40px 0;
+    text-align: center;
     display: flex;
+    .social-more {
+        width: 180px;
+        padding-right: 10px;
+        text-align: center;
     .button-blog {
         width: 110px;
             padding: 10px 0;
@@ -7,6 +15,75 @@
             text-transform: uppercase;
             color: $black;
             font-size: 14px;
+            .fa {
+                padding-right: 12px;
+            }
+            &:hover {
+                color: $background-color;
+                background-color: $green;
+                border: 1px solid $green;
+            }
+    }}
+}
 
+.comment-list {
+    padding: 0;
+    width: 95%;
+}
+
+.comment-body {
+    display: flex;
+    padding: 20px 0;
+}
+
+.comment{
+    border-bottom: 1px solid $border;
+}
+
+.children {
+    li {
+        border-top: 1px solid $border;
     }
+}
+
+.comment-content {
+    padding-left: 20px;
+    .comment-author {
+        font-weight: bold;
+        .fn {
+            font-family: 'Merriweather Web';
+            font-style: normal;
+            text-transform: capitalize;
+        }
+    }
+    .comment-metadata {
+        time {
+            color: $medium-grey;
+            text-transform: none;
+        }
+    }
+    p {
+        font-family: 'Merriweather Web';
+        text-transform: initial;
+    }
+}
+
+.comment-form-comment {
+    font-family: 'Novecento Sans Web';
+}
+
+.comment-respond {
+    width: 95%;
+}
+
+.reply {
+    text-transform: capitalize;
+}
+
+.comments-title, .comment-reply-title {
+    font-size: 28px;
+}
+
+.avatar {
+    border-radius: 50%;
 }

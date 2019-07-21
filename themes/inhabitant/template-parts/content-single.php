@@ -26,6 +26,5 @@
 		<?php the_content(); ?>
 	</div>
 
-		<?php echo sprintf( '<div class="read-more"><a href="%s" rel="bookmark"><div class="button">', esc_url( get_permalink() )).'Read More <b>&rarr;</b></div></a></div>'; ?>
 	
 </article>
