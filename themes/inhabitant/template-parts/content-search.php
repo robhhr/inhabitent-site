@@ -17,4 +17,6 @@
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
+	<?php echo sprintf( '<div class="read-more"><a href="%s" rel="bookmark"><div class="button">', esc_url( get_permalink() )).'Read More <b>&rarr;</b></div></a></div>'; ?>
+
 </article><!-- #post-## -->

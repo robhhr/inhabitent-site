@@ -23,7 +23,6 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
@@ -31,8 +30,7 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
-		<?php red_starter_numbered_pagination(); ?>
-
+			<?php red_starter_numbered_pagination(); ?>
 	</section><!-- #primary -->
 
 <?php get_sidebar(); ?>

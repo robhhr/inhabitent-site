@@ -864,7 +864,8 @@ ul {
 
 .site-main-search {
   width: 95%;
-  border-bottom: 1px solid #E1E1E1; }
+  border-bottom: 1px solid #E1E1E1;
+  padding-bottom: 20px; }
 
 .entry-header-search {
   height: 100%;
@@ -880,6 +881,25 @@ ul {
 .page-title {
   padding-bottom: 25px;
   border-bottom: 1px solid #E1E1E1; }
+
+.search-pagination {
+  font-family: 'Novecento Sans Web';
+  padding-top: 30px;
+  padding-bottom: 60px; }
+  .search-pagination .page-numbers.current {
+    color: #FFFFFF;
+    background-color: #808080;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: none; }
+  .search-pagination .page-numbers:not(.current) {
+    color: #FFFFFF;
+    background-color: #248A83;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: none; }
+    .search-pagination .page-numbers:not(.current):hover {
+      background-color: #2F1339; }
 
 .entry-header.hero-image-header {
   width: 100%;
@@ -1246,11 +1266,10 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
+  padding: 0 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  padding-top: 0; }
+  display: flex; }
   .site-content .content-area {
     -webkit-box-align: center;
         -ms-flex-align: center;
