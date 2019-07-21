@@ -21,7 +21,7 @@
 
 // Web content (posts entries)
 .site-content {
-    width: 1225px;
+    width: 1120px;
     align-self: center;
     align-items: center;
     padding: 1rem;
@@ -36,7 +36,7 @@
         flex: 1;
         padding-top: 35px;
         align-self: flex-start;
-        border-left: 1px solid #e1e1e1;
+        border-left: 1px solid $border;
         height: 100%;
     }
 }

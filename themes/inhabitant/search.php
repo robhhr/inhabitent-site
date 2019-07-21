@@ -8,7 +8,7 @@
 get_header(); ?>
 
 	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main-search" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -23,7 +23,6 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php red_starter_numbered_pagination(); ?>
 
 		<?php else : ?>
 
@@ -32,6 +31,8 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
+		<?php red_starter_numbered_pagination(); ?>
+
 	</section><!-- #primary -->
 
 <?php get_sidebar(); ?>

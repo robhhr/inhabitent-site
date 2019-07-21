@@ -1,0 +1,23 @@
+.site-main-search {
+    width: 95%;
+    border-bottom: 1px solid $border;
+}
+
+.entry-header-search {
+    height: 100%;
+    width: 95%;
+    img {
+        height: 100%;
+        width: 100%;
+    }
+    .entry-title-search {
+        font-size: 32px;
+        color: $green;
+        max-width: 60%;
+    }
+}
+
+.page-title {
+    padding-bottom: 25px;
+    border-bottom: 1px solid $border;
+}

@@ -579,7 +579,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1200px; }
+  width: 1100px; }
   .main-navigation .logo {
     width: auto; }
   .main-navigation ul {
@@ -768,7 +768,8 @@ a {
       border: 1px solid #248A83; }
 
 .shop-container {
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  width: 100%; }
 
 .shop-title {
   padding-top: 20px; }
@@ -796,9 +797,9 @@ ul {
   grid-gap: 30px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
-  width: 1200px;
   padding-top: 50px;
-  border-top: 1px dashed #C8C8C8; }
+  border-top: 1px dashed #C8C8C8;
+  width: 100%; }
 
 .product-area {
   display: -webkit-box;
@@ -860,6 +861,25 @@ ul {
       color: #FFFFFF;
       background-color: #248A83;
       border: 1px solid #248A83; }
+
+.site-main-search {
+  width: 95%;
+  border-bottom: 1px solid #E1E1E1; }
+
+.entry-header-search {
+  height: 100%;
+  width: 95%; }
+  .entry-header-search img {
+    height: 100%;
+    width: 100%; }
+  .entry-header-search .entry-title-search {
+    font-size: 32px;
+    color: #248A83;
+    max-width: 60%; }
+
+.page-title {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #E1E1E1; }
 
 .entry-header.hero-image-header {
   width: 100%;
@@ -1220,7 +1240,7 @@ object {
   border-bottom: 1px solid #e1e1e1; }
 
 .site-content {
-  width: 1225px;
+  width: 1120px;
   -ms-flex-item-align: center;
       align-self: center;
   -webkit-box-align: center;
@@ -1246,7 +1266,7 @@ object {
     padding-top: 35px;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    border-left: 1px solid #e1e1e1;
+    border-left: 1px solid #E1E1E1;
     height: 100%; }
 
 .entry-header {
