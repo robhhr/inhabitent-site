@@ -565,7 +565,8 @@ a {
 
 /* Menus */
 .menu-the-menu-container {
-  width: 450px; }
+  width: 450px;
+  font-family: 'Novecento Sans Web'; }
 
 .main-navigation {
   height: 50px;
@@ -594,6 +595,8 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    .main-navigation ul li a {
+      font-family: 'Novecento Sans Web'; }
 
 /* Small menu. */
 @media screen and (min-width: 768px) {
