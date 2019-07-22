@@ -12,7 +12,7 @@
 }
 
 .widget-area {
-	// padding: 10px 65px;
+	padding-left: 50px;
 	text-align: left;
 	ul {
 		padding-right: 50px;
@@ -32,8 +32,16 @@
 	}
 }
 
-.widget_text, .widget_archive {
-	padding-left: 50px;
+// .widget_text {
+// 	padding-left: 50px;
+// }
+
+.widget.widget_archive {
+	ul {
+		font-family: "Merriweather Web";
+		text-transform: capitalize;
+        padding: 0;
+    }
 }
 
 /* Search widget. */

@@ -800,6 +800,7 @@ a {
     max-width: 100%; }
 
 .widget-area {
+  padding-left: 50px;
   text-align: left; }
   .widget-area ul {
     padding-right: 50px;
@@ -814,8 +815,10 @@ a {
   .textwidget a, .textwidget span {
     width: 100%; }
 
-.widget_text, .widget_archive {
-  padding-left: 50px; }
+.widget.widget_archive ul {
+  font-family: "Merriweather Web";
+  text-transform: capitalize;
+  padding: 0; }
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -1338,9 +1341,6 @@ input[type="submit"] {
   line-height: 1.8;
   font-family: 'Merriweather Web'; }
 
-.widget.widget_archive {
-  padding: 0; }
-
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -1487,6 +1487,7 @@ object {
   padding: 0 0 40px 0;
   text-align: center; }
   .read-more .button {
+    font-family: 'Novecento Sans Web';
     width: 180px;
     padding: 10px 0;
     border: 1px solid #000000;
