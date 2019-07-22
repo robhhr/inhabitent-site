@@ -1533,8 +1533,9 @@ object {
 
 .contact-info, .business-hours {
   width: 30%;
-  line-height: 35px; }
-  .contact-info p, .business-hours p {
+  line-height: 35px;
+  list-style: none; }
+  .contact-info h1, .contact-info h2, .contact-info h3, .contact-info p, .business-hours h1, .business-hours h2, .business-hours h3, .business-hours p {
     font-weight: bold;
     text-transform: uppercase;
     color: #D99054; }

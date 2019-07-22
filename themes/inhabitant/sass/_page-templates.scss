@@ -119,7 +119,8 @@
 .contact-info, .business-hours {
     width: 30%;
     line-height: 35px;
-    p {
+    list-style: none;
+    h1, h2, h3, p {
         font-weight: bold;
         text-transform: uppercase;
         color: $orange;
