@@ -2,14 +2,14 @@
 # Widgets
 --------------------------------------------------------------*/
 
-.widget {
-	margin: 0 0 $base__space-unit;
+// .widget {
+// 	margin: 0 0 $base__space-unit;
 
-	/* Make sure select elements fit in widgets. */
-	select {
-		max-width: 100%;
-	}
-}
+// 	/* Make sure select elements fit in widgets. */
+// 	select {
+// 		max-width: 100%;
+// 	}
+// }
 
 .widget-area {
 	padding-left: 50px;
@@ -53,4 +53,29 @@
 
 .day-of-week {
 	font-weight: bold;
+}
+
+/////
+
+.tent-biz-hours-class {
+	list-style: none;
+}
+
+.business-hours {
+	font-family: 'Novecento Sans Web';
+	font-size: 20px;
+	width: 100%;
+    line-height: 35px;
+    list-style: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: $orange;
+}
+
+.copyright {
+	font-family: 'Novecento Sans Web';
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	text-align: center;
+	color: $background-color;
 }

@@ -68,6 +68,8 @@ function red_starter_widgets_init() {
 		'id' => 'footer-1',
 		'name' => esc_html('Footer'),
 		'description' => (''),
+		'before_title'  => '<div class = "business-hours">',
+		'after_title'   => '</div>',
 	) );
 }
 add_action( 'widgets_init', 'red_starter_widgets_init' );

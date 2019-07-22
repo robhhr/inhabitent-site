@@ -18,6 +18,7 @@ if ( ! is_active_sidebar( 'footer-1' ) ) {
 						.site-footer { background-image:url('.get_stylesheet_directory_uri().'/images/dark-wood.png) !important}
 						</style>';
 					?>
+		<div class="footer-container">
 				<div class="contact-info">
 					<p>Contact Info</p>
 					<a href="<?php echo esc_url( 'mailto: info@inhabitent.com' ); ?>"><?php echo "<i class='fa fa-envelope'></i> " ?><?php printf( esc_html( ' info@inhabitent.com' ) ); ?></a><br>
@@ -27,20 +28,24 @@ if ( ! is_active_sidebar( 'footer-1' ) ) {
 					<a href="<?php echo esc_url( 'www.google.com' ); ?>"><?php echo "<i class='fa fa-google-plus-square' id='sm-icon'></i>" ?></a>
 				</div><!-- .site-info -->
 				
-				<div class="business-hours">
+				<!-- <div class="business-hours"> -->
 					<?php dynamic_sidebar( 'footer-1' ); ?><br>
-				</div>
+				<!-- </div> -->
 
 				<div class="footer-logo">
 					<div class="f-logo">
 					<?php echo
 						'<style type="text/css">
-						.f-logo { background-image:url('.get_stylesheet_directory_uri().'/images/inhabitent-logo-text.svg) !important}
+						.f-logo { background-image:url('.get_stylesheet_directory_uri().'/images/inhabitent-logo-text.svg) !important; height: 100px !important; width:auto !important;
+							list-style: none;}
 						</style>';
 					?>
 					</div>
 				</div>
+		</div>
+				<p class="copyright">Copyright &#169; 2019 Inhabitent</p>
 			</footer><!-- #colophon -->
+
 		</div><!-- #page -->
 
 		<?php wp_footer(); ?>
