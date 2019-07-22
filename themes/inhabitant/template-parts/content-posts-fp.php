@@ -7,7 +7,7 @@
 
 ?>
 
-<div class="product-area" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div class="product-area-fp" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <?php if ( 'post' === get_post_type() ) : ?>
         <?php endif; ?>
         <?php if ( has_post_thumbnail() ) : ?>

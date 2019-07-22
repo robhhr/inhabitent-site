@@ -17,9 +17,7 @@ get_header('home'); ?>
 		</main>
 
 <!-- Taxonomy Section -->
-<div class="shop-title">
-	<h1>Shop Stuff</h1>
-</div>
+	<h1 class="fp-header">Shop Stuff</h1>
 <div class="tax-nav-fp">
 		<?php 
 		$args = array(
@@ -37,7 +35,9 @@ get_header('home'); ?>
 					<li class="tax-li">
 						<img src="<?php echo get_template_directory_uri()."/images/product-type-icons/".$term->slug.".svg"; ?>" />
 						<div class="tax-text"><?php echo $term->description ?></div>
+						<div class="read-more-tx">
 						<a href="<?php echo esc_url(get_term_link($term)); ?>"><?php echo $term->name." Stuff"; ?></a>
+						</div>
 					</li>
 				</ul>
 			<?php }}} ?>
@@ -45,7 +45,7 @@ get_header('home'); ?>
 
 <!-- Posts Loop -->
 <div class="blog-front">
-	<h1>Inhabitent Journal</h1>
+	<h1 class="fp-header">Inhabitent Journal</h1>
 	<div class="journal-front">
 		<?php
 		$shop_loop = new WP_Query( array(
@@ -70,11 +70,13 @@ get_header('home'); ?>
 </div>
 <!-- End loop -->
 
+<section class="adventures-section">
 <!-- Adventures Loop -->
 <div class="adventures-title">
-	<h1>Latest Adventures</h1>
+	<h1 class="fp-header">Latest Adventures</h1>
 </div>
-<div class="adventures-fp">
+<!-- <div class="adventures-fp"> -->
+<div class="product-container-ad-fp">
     <?php
     $adventure_posts = get_posts(array(
         'post_type' => 'adventures',
@@ -83,20 +85,21 @@ get_header('home'); ?>
         ));
 		?>
 		<?php foreach ($adventure_posts as $post) : setup_postdata( $post ); ?>
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<article class="entry-title-fp-ad" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<?php if ( has_post_thumbnail() ) : ?>
 						<?php the_post_thumbnail( 'large' ); ?>
 					<?php endif; ?>
 
-					<?php the_title( sprintf( '<h2 class="entry-title"><div class="int-text"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></div></h2>' ); ?>
+					<?php the_title( sprintf( '<a href="%s" class="ad-link-fp" rel="bookmark">', esc_url( get_permalink() ) ), '</a>' ); ?>
 
 					<?php if ( 'post' === get_post_type() ) : ?>
 					<?php endif; ?>
-			</article>
-        <?php endforeach;?>
+					<?php echo sprintf( '<a href="%s" rel="bookmark"><div class="read-more-ad-fp">', esc_url( get_permalink() )).'Read More</div></a>'; ?>
+		</article>
+		<?php endforeach;?>
 		<?php wp_reset_postdata(); ?>
-		<?php echo sprintf( '<div class="read-more"><a href="%s" rel="bookmark"><div class="button">', esc_url( get_permalink() )).'Read More <b>&rarr;</b></div></a></div>'; ?>
-
+		<a href="<?php echo get_post_type_archive_link('adventures') ?>" rel="bookmark"><div class="more-ad-fp">More Adventures</div></a>
 </div>
+</section>
 
 <?php get_footer(); ?>
