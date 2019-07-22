@@ -27,7 +27,7 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation-alt" role="navigation">
-				<a href='http://localhost/workspace/inhabitent-site/'>
+				<a href='<?php echo esc_url(home_url('/')); ?>'>
 					<div class="logo-alt">	
 						<?php echo '<style type="text/css"> .logo-alt { background-image:url('.get_stylesheet_directory_uri().'/images/inhabitent-logo-tent-white.svg) !important; height: 30px !important; width: 45px !important; background-size: 100% !important; background-repeat: no-repeat;}</style>';?>		
 					</div>
