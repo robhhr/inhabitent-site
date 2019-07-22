@@ -12,7 +12,7 @@ get_header(); ?>
 		<div class="shop-title">
 			<h1><?php single_term_title(); ?></h1>
 		</div>
-		<div class="tax-nav">
+		<div class="tax-nav-single">
 			<?php the_archive_description(); ?>
 		</div>
 	</div>
