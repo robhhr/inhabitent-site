@@ -25,6 +25,14 @@
 	<div class="entry-content">
 		<?php the_content(); ?>
 	</div>
+	<div class="post-info">
+		<p>Posted in &rarr; <?php the_category('<p>'); ?></p><span></span>
+		<p><?php the_tags('Tagged &rarr; '); ?></p>
+	</div>
 
-	
+	<div class="social-buttons-blog">
+		<?php echo sprintf( '<div class="social-more"><a href="%s" rel="bookmark"><div class="button-blog">', esc_url( get_permalink() )).'<i class="fa fa-facebook-f"></i>Like</div></a></div>'; ?>
+		<?php echo sprintf( '<div class="social-more"><a href="%s" rel="bookmark"><div class="button-blog">', esc_url( get_permalink() )).'<i class="fa fa-twitter"></i>Tweet</div></a></div>'; ?>
+		<?php echo sprintf( '<div class="social-more"><a href="%s" rel="bookmark"><div class="button-blog">', esc_url( get_permalink() )).'<i class="fa fa-pinterest"></i>Pin</div></a></div>'; ?>
+	</div>	
 </article>
