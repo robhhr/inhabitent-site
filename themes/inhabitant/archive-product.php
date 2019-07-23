@@ -45,7 +45,7 @@ get_header(); ?>
 		// Product loop
 		$shop_loop = new WP_Query( array(
 			'post_type' => 'product',
-			'order' => 'ASC',
+			'order' => 'DESC',
 			'posts_per_page' => 20,
 		)); 
 		?>
