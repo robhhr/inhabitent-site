@@ -893,6 +893,19 @@ a {
       background-color: #248A83;
       border: 1px solid #248A83; }
 
+.adventures-single-post {
+  margin: 0 auto;
+  padding-bottom: 65px;
+  width: 780px; }
+
+.adventure-title {
+  font-size: 38px;
+  text-align: left; }
+
+.postedby-adventures {
+  font-family: 'Novecento Sans Web';
+  text-transform: uppercase; }
+
 .shop-container {
   padding-bottom: 80px;
   width: 100%; }
@@ -1529,6 +1542,9 @@ object {
 
 .site-main {
   width: 100%; }
+
+.site-footer {
+  height: 380px; }
 
 .footer-container {
   display: -webkit-box;
