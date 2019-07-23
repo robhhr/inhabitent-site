@@ -26,8 +26,8 @@
 		<?php the_content(); ?>
 	</div>
 	<div class="post-info">
-		<p>Posted in &rarr; <?php the_category('<p>'); ?></p><span></span>
-		<p><?php the_tags('Tagged &rarr; '); ?></p>
+		<p>Posted in &rarr; <?php the_category('<p>, '); ?> </p>
+		<p class="tagged-in"><?php the_tags('Tagged &rarr; '); ?></p>
 	</div>
 
 	<div class="social-buttons-blog">

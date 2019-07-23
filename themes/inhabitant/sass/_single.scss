@@ -2,8 +2,8 @@
     font-family: "Novecento Sans Web";
     text-transform: uppercase;
     display: flex;
-    justify-content: space-between;
-    width: 475px;
+    // justify-content: space-between;
+    // width: 475px;
 }
 
 .social-buttons-blog {
@@ -73,12 +73,17 @@
     }
     p {
         font-family: 'Merriweather Web';
+        font-size: 16px;
         text-transform: initial;
     }
 }
 
 .comment-form {
     position: relative;
+}
+
+.tagged-in {
+    padding-left: 50px;
 }
 
 .comment-form-author, .comment-form-email {
@@ -115,6 +120,10 @@
 
 .reply {
     text-transform: capitalize;
+    .comment-reply-link {
+        font-family: 'Merriweather Web';
+        font-size: 16px;
+    }
 }
 
 .comments-title, .comment-reply-title {

@@ -1159,11 +1159,7 @@ ul {
   text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 475px; }
+  display: flex; }
 
 .social-buttons-blog {
   -webkit-box-align: end;
@@ -1223,10 +1219,14 @@ ul {
     text-transform: none; }
   .comment-content p {
     font-family: 'Merriweather Web';
+    font-size: 16px;
     text-transform: initial; }
 
 .comment-form {
   position: relative; }
+
+.tagged-in {
+  padding-left: 50px; }
 
 .comment-form-author, .comment-form-email {
   display: inline-grid;
@@ -1256,6 +1256,9 @@ ul {
 
 .reply {
   text-transform: capitalize; }
+  .reply .comment-reply-link {
+    font-family: 'Merriweather Web';
+    font-size: 16px; }
 
 .comments-title, .comment-reply-title {
   font-size: 28px; }
