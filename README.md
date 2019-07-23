@@ -1,17 +1,16 @@
 <div style="text-align: center">
-    <img src="themes/inhabitant/images/inhabitent-logo-text-dark.svg" width="350" height="auto">
+    <img src="themes/inhabitant/images/inhabitent-logo-text-dark.svg" width="300" height="auto">
 </div>
 
 ## Inhabitent Site 🧸⛺
 
 WP-based theme inspired by the outdoors and active lifestyle with custom made plugins for it's own functionality. Built with HTML, WordPress, CSS, PHP & vanilla JS.
 
-This project is an e-commerce website for a camping company with a blog section for custom posts and a shop page where the products are display.
+This project is an e-commerce website for a camping company with a blog section for custom posts and a shop page where the products are displayed for sale.
 
----
 ## Installation
 
-### 1. Download me (don't clone me!)
+### 1. Download the repo (don't clone it!)
 
 Then add me to your wp-content directory.
 
@@ -39,7 +38,6 @@ Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Br
 * JavaScript
 * Gulp
 
----
 ## Project Comps
 ### Front Page
 <img src="themes/inhabitant/images/comps/front-page.png" width="700" height="auto">
