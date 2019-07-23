@@ -1,10 +1,6 @@
-# Inhabitent Site
-
-## Installation
-
-### 1. Download me (don't clone me!)
-
-Then add me to your `wp-content` directory.
+## Inhabitent Site 🧸⛺
+---
+WP-based theme inspired by the outdoors and active lifestyle with custom made plugins for it's own functionality. Built with HTML, CSS, PHP & vanilla JS.
 
 ### 2. Rename the `redstarter-master` directory
 

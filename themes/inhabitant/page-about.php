@@ -7,7 +7,7 @@
 
 get_header('about'); ?>
 
-		<main id="main" class="site-main-alt" role="main">
+		<main id="main" class="site-main-alt-about" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 

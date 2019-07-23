@@ -8,6 +8,12 @@
     border-top: 1px dashed $d-border;
 }
 
+.adventure-post {
+    img {
+        height: 100vh;
+    }
+}
+
 .entry-title-fp {
     position: relative;
     height: 500px;
