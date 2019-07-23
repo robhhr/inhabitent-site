@@ -78,7 +78,7 @@ add_action( 'widgets_init', 'red_starter_widgets_init' );
 
 add_filter( 'wp_nav_menu_items','add_search_box', 10, 2 );
 function add_search_box( $items, $args ) {
-$items .= '<li>' . get_search_form( false ) . '</li>';
+$items .= '<li class="searchbox-position">' . get_search_form( false ) . '</li>';
 return $items;
 }
 

@@ -81,24 +81,7 @@ table {
   width: 100%;
 }
 
-.search-form {
-  fieldset {
-    border: none;
-    padding: 50% 0;
-    margin: 0;
-    label {
-      // font-family: 'Novecento Sans Web';
-      display: none;
-    }
-    .search-submit {
-      border: none;
-      background: transparent;
-      box-shadow: none;
-      padding: none;
-      .icon-search {
-        color: $green;
-        font-size: 16px;
-      }
-    }
+.searchbox-position {
+  margin-top: 15px;
+  margin-right: 20px;
   }
-}
