@@ -18,9 +18,7 @@ get_header(); ?>
 		<div>
 			<h2 class="entry-title-fp">
 				<?php the_post_thumbnail(); ?>
-				<!-- <div class="ad-text"> -->
 					<?php the_title( sprintf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>' ); ?>
-				<!-- </div> -->
 			</h2>
 			<?php echo sprintf( '<div class="read-more-ad"><a href="%s" rel="bookmark"><div class="button">', esc_url( get_permalink() )).'Read More</div></a></div>'; ?>
 		</div>
