@@ -1623,6 +1623,7 @@ object {
         .entry-header .entry-title .int-text a:hover {
           color: #A1A1A1; }
   .entry-header .entry-meta {
+    font-family: 'Novecento Sans Web';
     position: absolute;
     bottom: 0px;
     right: 0px;
