@@ -44,7 +44,7 @@
     padding: 20px 0;
 }
 
-.comment{
+.comment {
     border-bottom: 1px solid $border;
 }
 
@@ -76,6 +76,34 @@
     }
 }
 
+.comment-form {
+    position: relative;
+}
+
+.comment-form-author, .comment-form-email {
+    display: inline-grid;
+    width: 48%;
+}
+
+.comment-form-email {
+    position: absolute;
+    display: inline-grid;
+    width: 48%;
+    right: 0px;
+    top: 305px;
+    display: inline-grid;
+    width: 48%;
+}
+
+.comment-form-url {
+    display: grid;
+    padding-bottom: 20px;
+}
+
+.comment-form-cookies-consent {
+    display: none;
+}
+
 .comment-form-comment {
     font-family: 'Novecento Sans Web';
 }
@@ -94,4 +122,8 @@
 
 .avatar {
     border-radius: 50%;
+}
+
+.comments-area {
+    padding-bottom: 45px;
 }
