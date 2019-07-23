@@ -9,6 +9,7 @@ header {
 }
 
 h2 {
+    font-size: 32px;
     text-transform: uppercase;
 }
 
@@ -18,7 +19,14 @@ input, textarea {
 }
 
 label {
+    font-size: 18px;
+    line-height: 35px;
     text-transform: uppercase;
+    font-family: 'Novecento Sans Web';
+}
+
+.required {
+    color: $orange;
 }
 
 input[type="submit"] {
