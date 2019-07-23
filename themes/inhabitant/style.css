@@ -1176,6 +1176,7 @@ ul {
   display: -ms-flexbox;
   display: flex; }
   .social-buttons-blog .social-more {
+    font-family: 'Novecento Sans Web';
     width: 180px;
     padding-right: 10px;
     text-align: center; }
@@ -1370,6 +1371,7 @@ input[type="submit"] {
     display: -ms-flexbox;
     display: flex; }
     .product-content .social-buttons .social-more {
+      font-family: 'Novecento Sans Web';
       width: 180px;
       padding-right: 10px;
       text-align: center; }
@@ -1454,6 +1456,9 @@ input[type="submit"] {
   text-transform: capitalize;
   line-height: 1.8;
   font-family: 'Merriweather Web'; }
+
+.widget_archive {
+  padding-bottom: 50px; }
 
 /*--------------------------------------------------------------
 # Media
